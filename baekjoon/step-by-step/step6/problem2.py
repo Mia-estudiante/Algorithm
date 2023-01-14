@@ -5,4 +5,5 @@ def sum_numbers(n):
         n//=10
     return result
 input()
-print(sum_numbers(int(input())))
+# print(sum_numbers(int(input())))
+print(sum(list(map(int, input()))))
