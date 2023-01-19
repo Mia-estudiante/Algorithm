@@ -1,5 +1,5 @@
 word = input().upper()
-counts = [0]*26
+counts = [0]*26 # 알파벳 별 빈도 저장
 for i in range(len(word)):
     counts[ord(word[i])-65] += 1
 maxindex = [i for i in range(len(counts)) if counts[i]==max(counts)]
